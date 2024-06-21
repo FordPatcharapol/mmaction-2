@@ -1,4 +1,6 @@
 .python-version
 .venv
 videos
-cmd.txt
+command.txt
+data/*
+**/__pycache__
