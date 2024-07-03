@@ -4,3 +4,5 @@ videos
 command.txt
 data/*
 **/__pycache__
+browse_out
+work_dirs

@@ -1,14 +1,14 @@
 _base_ = [
-    '../../_base_/models/tsn_r50.py', '../../_base_/schedules/sgd_100e.py',
+    '../../_base_/models/trn_r50_custom.py', '../../_base_/schedules/sgd_100e.py',
     '../../_base_/default_runtime.py'
 ]
 
 # dataset settings
 dataset_type = 'VideoDataset'
-data_root = 'data/kinetics400/videos_train'
-data_root_val = 'data/kinetics400/videos_val'
-ann_file_train = 'data/kinetics400/kinetics400_train_list_videos.txt'
-ann_file_val = 'data/kinetics400/kinetics400_val_list_videos.txt'
+data_root = 'data/lotus/train'
+data_root_val = 'data/lotus/val'
+ann_file_train = 'data/lotus/lotus_train_video.txt'
+ann_file_val = 'data/lotus/lotus_val_video.txt'
 
 file_client_args = dict(io_backend='disk')
 
